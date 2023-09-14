@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style: none;
+   font-family: 'Work Sans', sans-serif;
+}
+
+body {
+   overflow: hidden;
+}
+
+.background {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(nuvem.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+
+.cabeçalho-link {
+    display: flex;
+    gap: 2rem;
+    font-weight: 300;
+}
+
+.cabeçalho-link a {
+    color: #fff;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.cabeçalho-link a:hover {
+    color: #eb0a0a;
+}
+
+.logo img {
+    width: 49px;
+    height: auto;
+}
+
+.button {
+    color: #fff;
+    background: #eb0a0a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #eb0a0a;
+}
+
+.container-text {
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.text h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text h1 {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 28px;
+}
+
+.text span {
+    color: #eb0a0a;
+}
+
+.text p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.github a {
+    color: #eb0a0a;
+    margin-top: 15px;
+    font-size: 24px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.github a:hover {
+    color: #fff;
+}
+
+.gif-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin-top: 20px; /* Adicione uma margem superior para separação */
+}
+
+h1{
+    color: #fff;
+    animation: colorChange 4s linear infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        color: red; /* Cor inicial */
+    }
+    25% {
+        color: blue; /* Cor após 25% da animação */
+    }
+    50% {
+        color: green; /* Cor após 50% da animação */
+    }
+    75% {
+        color: orange; /* Cor após 75% da animação */
+    }
+    100% {
+        color: red; /* Volta para a cor inicial */
+    }
+}
+
